@@ -39,10 +39,11 @@
         .MenuPausa__modal__texto {
             background-color: red;
             position: absolute;
-            height: 100vh;
+            top: 10%;
+            height: 150vh;
             right: 0;
             width: 50%;
-            transform:rotateZ(-20deg);
+            transform: rotate(-20deg) translateY(calc(6.04vh - 17.1vw));
             
             .MenuPausa__modal__texto__lista {
                 background-color: green;
