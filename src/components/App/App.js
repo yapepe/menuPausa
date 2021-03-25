@@ -14,8 +14,5 @@ export default function App() {
       imagen = { Imagen }
       />
     </div>
-    
-    
-    
   )
 }

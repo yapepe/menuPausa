@@ -31,7 +31,7 @@ export default function MenuPausa({ lista, imagen}) {
                         </div>
                     )
                 })
-                : console.log('CRITICAL ERROR: la entrada de hamburger no es un array')    
+                : console.log('CRITICAL ERROR: la entrada  no es un array')    
             }
             </div>
           </div>
