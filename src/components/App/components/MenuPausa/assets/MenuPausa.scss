@@ -1,0 +1,52 @@
+.MenuPausa {
+    
+
+    .MenuPausa__boton {
+        cursor: pointer;
+        font-size: 5em;
+        position: fixed;
+        top: 0px;
+        left: 10px;
+        background-color: red;
+        color: aqua;
+        padding: 2px;
+    }
+
+    .MenuPausa__modal {
+        height: 100vh;
+        background-color: yellow;
+        overflow: hidden;
+
+        .MenuPausa__modal__tache {
+            cursor: pointer;
+            background-color: aqua;
+            color: darkgreen;
+            right: 0;
+            position: absolute;
+            font-size: 5em;
+            z-index: 1;
+        }
+
+        .MenuPausa__modal__imagen {
+            background-color: darkmagenta;
+            position: absolute;
+            height: 100vh;
+            left: 0;
+            width: 50%;
+            
+        }
+
+        .MenuPausa__modal__texto {
+            background-color: red;
+            position: absolute;
+            height: 100vh;
+            right: 0;
+            width: 50%;
+            transform:rotateZ(-20deg);
+            
+            .MenuPausa__modal__texto__lista {
+                background-color: green;
+            } 
+        } 
+    }
+}
