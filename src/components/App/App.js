@@ -1,6 +1,6 @@
 import './assets/App.css'
 import MenuPausa from './components/MenuPausa/MenuPausa'
-import Imagen from '../App/assets/gotenks.jpg'
+import Imagen from './assets/gotenks.jpg'
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
         <a href='/'>aaaaaaa</a>,
         <a href='/'>aaaaaaa</a>
       ]}
-      imagen = {<img href={Imagen} alt=''/>}
+      imagen = { Imagen }
       />
     </div>
     

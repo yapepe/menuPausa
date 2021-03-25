@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 export default function MenuPausa({ lista, imagen}) {
     const [mostrarModal , setMostrarModal] = useState(false)
+    let linkKey = 0
 
   return (
     <div className="MenuPausa">
@@ -16,14 +17,16 @@ export default function MenuPausa({ lista, imagen}) {
                 onClick={ () => setMostrarModal(false)}
             >x</div>
             <div className='MenuPausa__modal__imagen'>
-            { imagen
-            }
+              <img src={imagen} alt=''className='MenuPausa__modal__imagen--activada'/>
             </div>
             <div className='MenuPausa__modal__texto'>
             { (Array.isArray(lista))
                 ? lista.map( link => {
+                    linkKey++
                     return(
-                        <div className='MenuPausa__modal__texto__lista'>
+                        <div 
+                            key={ linkKey } 
+                            className='MenuPausa__modal__texto__lista'>
                             { link }
                         </div>
                     )
